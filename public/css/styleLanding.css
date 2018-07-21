@@ -1,0 +1,45 @@
+html{
+    background-image: url('../img/pokemon_go_hd-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+#topheader{
+    background-color: #fe9126;
+    color: #ffffff;
+    height: 100px;
+}
+#topMenu{
+    font-size: 20px;
+    color: white;
+}
+main{
+    color: white;
+}
+#txtPokemon{
+    padding-left: 430px;
+    padding-top: 480px;
+    position: absolute;
+}
+#txtEntrenador{
+    padding-left: 1300px;
+    padding-top: 480px;
+    position: absolute;
+}
+#botonPokemon{
+    padding-left: 300px;
+    padding-top: 500px;
+    position: absolute;
+}
+#botonEntrenador{
+    padding-left: 1300px;
+    padding-top: 480px;
+    position: absolute;
+}
+#imgEntrenador{
+    border-radius: 50%;
+    width:65%;
+    height: 65%;
+}

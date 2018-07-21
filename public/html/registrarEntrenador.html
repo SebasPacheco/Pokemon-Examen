@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Entrenadores</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styleRegistrarEntrenador.css">
+
+</head>
+
+<body>
+    <header id="topheader">
+        <nav>
+            <div id="TopMenu">
+                <a href="../html/listarEntrenador.html">Entrenadores Registrados</a>
+                <a href="../html/registrarEntrenador.html">Registrar Entrenador</a>
+                <a href="../html/listarPokemon.html">Pokedex</a>
+                <a href="../html/registrarPokemon.html">Agregar Pokemon</a>
+
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="bordesEntrenador">
+            <div>
+                <img id="bordeEntrandor1" src="../img/Listar Entrenador Fondo 2.jpg">
+            </div>
+            </div>
+            <div>
+                <img id="bordeEntrandor2" src="../img/Listar Entrenador Fondo.jpg">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img id="Profesor" src="../img/Profesor_Oak.png">
+            </div>
+            <div>
+                <img id="Profesor2" src="../img/Profesor 2.png">
+            </div>
+        </section>
+        <section>
+            <div id="background">
+               
+            </div>
+
+            <div id="formulario">
+                Asi que dime...
+                <br>
+                <br>Cual es tu Identificacion:
+                <br>
+                <input type="number" id="txtidEntrenador">
+                <br>Cual es tu nombre:
+                <br>
+                <input type="text" id="txtnombreEntrenador">
+                <br> Cual es tu edad?
+                <br>
+                <input type="number" id="txtedadEntrenador" min="15" max="80">
+                <br> Eres un...
+                <br>
+                <select id="txtGenero">
+                    <option value="hombre">hombre</option>
+                    <option value="mujer">mujer</option>
+                </select>
+                <br> Muestrame como te ves
+                <br>
+                <button type="button" id="btnSeleccionarImagen"></button>
+                <br>
+                <br>
+                <button type="button" id="btnRegistrarEntrenador">Listo</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/servicioEntrenador.js"></script>
+    <script src="../js/controladorEntrenador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+
+
+</body>
+
+
+
+</html>
