@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Pokemon</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styleRegistrarPokemon.css">
+
+</head>
+
+<body>
+    <header id="topheader">
+        <nav>
+            <div id="TopMenu">
+                <a href="../html/listarEntrenador.html">Entrenadores Registrados</a>
+                <a href="../html/registrarEntrenador.html">Registrar Entrenador</a>
+                <a href="../html/listarPokemon.html">Pokedex</a>
+
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="formulario">
+                <div id="header1">
+                    Nuevo Pokemon...
+                </div>
+                <br>
+                <div id="datos">
+                    <br>Numero de Pokedex:
+                <br>
+                <input type="number" id="txtidPokemon" min="0" max="999">
+                <br>Nombre del pokemon:
+                <br>
+                <input type="text" id="txtnombrePokemon">
+                <br>
+                 Tipo(s) del pokemon
+                <br>
+                <select id="txtTipo1">
+                    <option value="agua">Agua</option>
+                    <option value="fuego">Fuego</option>
+                </select>
+                <select id="txtTipo2">
+                    <option value=""></option>
+                    <option value="agua">Agua</option>
+                    <option value="fuego">Fuego</option>
+                </select> 
+                </div>
+               
+                <div id="botonRegistrar">
+                    <div id="txtImagen">
+                        Imagen de Pokemon
+                    </div>
+                    <br> 
+                <br>
+                <button type="button" id="btnSeleccionarImagen"></button>
+                <br>
+                <br>
+                </div>
+                
+                <button type="button" id="btnRegistrarPokemon">Registrar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/servicioPokemon.js"></script>
+    <script src="../js/controladorPokemon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,17 +1,16 @@
-function registrarEntrenador(nIdEntrenador, sNombreEntrenador, nEdad, sGenero){
+function registrarEntrenador(nIdPokemon, sNombrePokemon, sTipo1, sTipo2){
     let respuesta = '';
     let peticion = $.ajax({
-        url: 'http://localhost:4000/api/registrar_entrenador',
+        url: 'http://localhost:4000/api/registrar_pokemon',
         type: 'post',
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         dataType : 'json',
         async:false,
         data:{
-            Nombre_entrenador : sNombreEntrenador,
-            Identificacion_entrenador: nIdEntrenador,
-            Edad: nEdad,
-            Genero: sGenero,
-
+            Nombre_pokemon : nIdPokemon,
+            Identificacion_pokemon: sNombrePokemon,
+            pokemontipo1: sTipo1,
+            pokemonTipo2: sTipo2,
         }
       });
     
