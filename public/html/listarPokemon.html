@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lista de pokemon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylelListarPokemon.css">
+</head>
+
+<body>
+    <section id="Slideshow">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="../img/Pokemon Wallpaper 1.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="../img/Pokemon Wallpaper 2.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="../img/Pokemon Wallpaper 3.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="../img/Pokemon Wallpaper 4.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="../img/Pokemon Wallpaper 5.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="../img/Pokemon Wallpaper 6.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="../img/Pokemon Wallpaper 7.jpg" style="width:100%" style="height: 100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <header>
+        <div id="TopHeader">
+            <img id="logo" src="../img/pokemon_logo_PNG5.png" alt="">
+        </div>
+        <nav>
+            <div id="TopMenu">
+                <a href="../html/registrarPokemon.html">Registrar pokemon</a>
+                <a href="../html/registrarEntrenador.html">Registrar Entrenador</a>
+                <a href="../html/listarEntrenador.html">Lista de Entrenadores</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div id="lista">
+            <section class="formSection">
+                <div id="topListSection">
+                    <div id="topListButtons">
+                        <button type="button" id="btnRegistrar" class="boton botonNormal">Registrar Entrenador</button>
+                        <i id="iconoBuscar" class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Buscar" class="buscar" id="txtBuscar">
+                        <button type="button" id="btnAsociar" class="boton botonNormal">Capturar Pokemon</button>
+                    </div>
+                </div>
+                <table id="tblPokemon">
+                    <thead>
+                        <tr>    
+                            <th>Numero de Pokedex</th>
+                            <th>Nombre del pokemon</th>
+                            <th>Tipo 1</th>
+                            <th>Tipo 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../js/servicioListarPokemon.js"></script>
+    <script src="../js/controladorListarPokemon.js"></script>
+    <script src="../js/controladorSlideshow.js"></script>
+</body>
+
+</html>

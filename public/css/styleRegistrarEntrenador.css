@@ -9,13 +9,47 @@ html{
     width: 100%;
     border-radius: 50%;
 }
-#topheader{
-    background-color: #fe9126;
-    color: #ffffff;
-    height: 80px;
+
+#TopHeader h1{
+    position: absolute;
+    margin-left: 46.5%;
+    font-size: 35px;
+    padding-top: 33px;
 }
-#topMenu{
+#TopHeader h2{
+    
+    position: absolute;
+    margin-left: 80%;
+    font-size: 22px;
+    padding-top: 40px;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    margin-top: -60px;
+    margin-left: 10px;
+    position: absolute;
+}
+header nav {
+    background-color:gray ;
+    border: 1px solid #000000; 
+    height: 51px;
     font-size: 20px;
+    text-decoration: none; 
+  }
+header nav a:hover{
+    color: white;
+}
+#TopMenu{
+    margin-top: 15px;
+    text-align: center;  
+}
+#TopMenu a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+#TopMenu a:hover{
     color: white;
 }
 main{
@@ -46,14 +80,15 @@ main{
     position: absolute;
 }
 #background{
-    background-image: url('../img/Registry\ Background.png');
+    
     margin-top: 240px;
-    margin-left: 775px;
+    margin-left: 0px;
     position: absolute;
-    width: 19%;
-    height: 44%;   
+    width: 400px;
+    height: 400px;   
 }
 #formulario{
+    background-image: url('../img/Registry\ Background.png');
     color: white;
     width: 350px;
     border: 10px solid gray;

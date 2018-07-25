@@ -64,6 +64,7 @@ app.use( function(req, res, next) {
  */
 
 const entrenador = require('./component/entrenador/entrenador.route');
+const pokemon = require('./component/pokemon/pokemon.route');
 //const pokemon = require('./componentes/carreras/carreras.route');
 
 /**
@@ -71,6 +72,7 @@ const entrenador = require('./component/entrenador/entrenador.route');
  */
 
 app.use('/api', entrenador);
+app.use('api', pokemon);
 //app.use('/api', pokemon);
 
 

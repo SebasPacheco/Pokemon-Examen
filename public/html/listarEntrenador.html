@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Listar Entrenadores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styleListarEntrenador.css">
+</head>
+
+<body>
+    <header>
+        <div id="TopHeader">
+            <img id="logo" src="../img/pokemon_logo_PNG5.png" alt="">
+        </div>
+        <nav>
+            <div id="TopMenu">
+                <a href="../html/registrarPokemon.html">Registrar pokemon</a>
+                <a href="../html/registrarEntrenador.html">Registrar Entrenador</a>
+                <a href="../html/listarPokemon.html">Pokedex</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="bordesEntrenador">
+            <div>
+                <img id="bordeEntrandor1" src="../img/Listar Entrenador Fondo 2.jpg">
+            </div>
+            </div>
+            <div>
+                <img id="bordeEntrandor2" src="../img/Listar Entrenador Fondo.jpg">
+            </div>
+        </section>
+
+        <div id="lista">
+            <section class="formSection">
+                <div id="topListSection">
+                    <div id="topListButtons">
+                        <button type="button" id="btnRegistrar" class="boton botonNormal">Registrar Entrenador</button>
+                        <i id="iconoBuscar" class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Buscar" class="buscar" id="txtBuscar">
+                        <button type="button" id="btnAsociar" class="boton botonNormal">Capturar Pokemon</button>
+                    </div>
+                </div>
+                <table id="tblEntrenadores">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Identificacion</th>
+                            <th>Edad</th>
+                            <th>Genero</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../js/servicioEntrenador.js"></script>
+    <script src="../js/servicioListarEntrenador.js"></script>
+    <script src="../js/controladorListarEntrenador.js"></script>
+</body>
+
+</html>

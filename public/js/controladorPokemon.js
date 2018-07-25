@@ -34,7 +34,7 @@ function obtenerDatos() {
             confirmButtonText: 'Entendido'
         });
     } else {
-        registrarEntrenador(nIdPokemon, sNombrePokemon, sTipo1, sTipo2 );
+        registrarPokemon(nIdPokemon, sNombrePokemon, sTipo1, sTipo2 );
         swal({
             title: 'Datos Correctos',
             text: 'El pokemon se ha registrado en el pokedex',

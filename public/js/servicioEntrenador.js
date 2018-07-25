@@ -11,7 +11,6 @@ function registrarEntrenador(nIdEntrenador, sNombreEntrenador, nEdad, sGenero){
             Identificacion_entrenador: nIdEntrenador,
             Edad: nEdad,
             Genero: sGenero,
-
         }
       });
     

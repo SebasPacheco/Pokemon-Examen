@@ -1,4 +1,4 @@
-function registrarEntrenador(nIdPokemon, sNombrePokemon, sTipo1, sTipo2){
+function registrarPokemon(nIdPokemon, sNombrePokemon, sTipo1, sTipo2){
     let respuesta = '';
     let peticion = $.ajax({
         url: 'http://localhost:4000/api/registrar_pokemon',
@@ -10,7 +10,7 @@ function registrarEntrenador(nIdPokemon, sNombrePokemon, sTipo1, sTipo2){
             Nombre_pokemon : nIdPokemon,
             Identificacion_pokemon: sNombrePokemon,
             pokemontipo1: sTipo1,
-            pokemonTipo2: sTipo2,
+            pokemonTipo2: sTipo2
         }
       });
     

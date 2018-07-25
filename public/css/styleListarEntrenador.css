@@ -1,0 +1,233 @@
+html{
+    background-image: url('../img/pokeball_simple_background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+/*Estilos del header*/
+#TopHeader h1{
+    position: absolute;
+    margin-left: 46.5%;
+    font-size: 35px;
+    padding-top: 33px;
+}
+#TopHeader h2{
+    
+    position: absolute;
+    margin-left: 80%;
+    font-size: 22px;
+    padding-top: 40px;
+}
+#logo{
+    width: 150px;
+    height: 175px;
+    margin-top: -60px;
+    margin-left: 10px;
+    position: absolute;
+}
+header nav {
+    background-color:gray ;
+    border: 1px solid #000000; 
+    height: 70px;
+    font-size: 20px;
+    text-decoration: none; 
+  }
+header nav a:hover{
+    color: white;
+}
+#TopMenu{
+    margin-top: 15px;
+    text-align: center;  
+}
+#TopMenu a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+#TopMenu a:hover{
+    color: white;
+}
+#bordeEntrandor1{
+    margin-left: -110px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+#bordeEntrandor2{
+    margin-left: -110px;    
+    padding-top: 700px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+/*Estilos de la tabla*/
+main{
+    margin-top: 3%;
+    margin-bottom: 4.8%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+/*Esto es un div en donde va metido el formSection (que es una clase)*/
+#lista{
+    padding-bottom: 3%;
+    background-size: 30%;   
+}
+/*En esta clase va a estar toda la tabla con los botones 
+registrar y filtrar y la lista*/
+.formSection{
+    padding-top: 4%;
+    width: 100%;
+}
+/*Esta es la lista (tabla)*/
+#tblEntrenadores{
+    margin-left: 20%;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid black;
+}
+/*Esto es en donde se busca que esta en un div con un id llamado 
+topListSection que es donde estan los botones registrar y filtrar 
+junto con la tabla para buscar*/
+#topListSection{
+    margin-top: 200px;
+    padding-left: 13.5%;
+    padding-bottom: 3%;
+}
+/*El icono de la lupa*/
+#iconoBuscar{
+    font-size: 190%;
+    margin-right: 1%;
+}
+/*El placeholder para escribir (buscar)*/
+#txtBuscar{
+    font-family:'Roboto', sans-serif;
+    width: 50%;
+    line-height: 180%;
+    position: relative;   
+}
+/*El boton de registrar*/
+#btnRegistrar{ 
+    
+    background-color: #fe9126;
+    color: white;
+   font-size: 110%;
+    font-family:'Roboto', sans-serif;
+    width: 14%;
+   
+    position: relative;
+    margin-right: 1%;
+    line-height: 180%;
+    border-radius: 55px 55px 55px 55px;
+    -moz-border-radius: 55px 55px 55px 55px;
+    -webkit-border-radius: 55px 55px 55px 55px;
+    border: 0px solid #ffffff;
+}
+/*El boton de filtrar*/
+#btnAsociar{
+    background-color: #fe9126;
+    color: white;
+   font-size: 110%;
+    font-family:'Roboto', sans-serif;
+    width: 14%;
+   
+    position: relative;
+    margin-left: 2%;
+    line-height: 180%;
+    border-radius: 55px 55px 55px 55px;
+    -moz-border-radius: 55px 55px 55px 55px;
+    -webkit-border-radius: 55px 55px 55px 55px;
+    border: 0px solid #ffffff;
+}
+#btnRegistrar:hover{
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+}
+#btnAsociar:hover{
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+}
+/*Estilos de la tabla, la tabla puede ser mas grande solo que tienen que cambiar la parte del menu de arriba o hacer los cuadros de la 
+tabla mas pequeños o mas grandes eso depende de los datos que quieran poner*/
+table th{
+    padding: 10px;
+}
+table thead tr th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+}
+#tblCarreras thead tr th{
+    border: 1px solid #000000; 
+}
+#tblCarreras tbody tr td{
+    
+    border: 1px solid #000000; 
+    text-align: center;
+    font-size: 110%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+#tblCarreras tbody tr td a {
+    margin-top: 0%;
+    color: #000;
+    margin-right: 10px;
+    text-decoration: none;
+}
+tr:hover{
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    box-shadow: solid #732969;
+}
+tr a:hover{
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    box-shadow: solid #732969;
+}
+/*Estilos del footer*/
+footer {
+    
+    
+    background-color:#732969;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    color: white;
+  }
+#FooterBottom h1{
+    position: absolute;
+    padding-top: 23px;
+    padding-left: 30px;
+}
+#FooterBottom h2{
+    position: absolute;
+    padding-top: 23px;
+    padding-left: 90px;
+}
+#FooterBottom h3{
+    position: absolute;;
+    padding-left: 89%;
+    padding-top: 23px;
+}
+#FooterBottom h4{
+    position: absolute;
+    padding-left: 89%;
+    padding-top: 23px;
+}
+#FooterBottom img{
+    position: relative;
+}

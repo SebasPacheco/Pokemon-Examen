@@ -1,8 +1,8 @@
 'use strict';
-const pokemonModel = require ('./entrenador.model');
+const pokemonModel = require ('./pokemon.model');
 
 module.exports.registrar = function(req, res){
-    let nuevoEntrenador = new pokemonModel({
+    let nuevoPokemon = new pokemonModel({
 
         Nombre_pokemon : req.body.Nombre_pokemon,
         Identificacion_pokemon: req.body.Identificacion_pokemon,
@@ -15,13 +15,13 @@ module.exports.registrar = function(req, res){
         if(error){
             res.json({
                 success : false,
-                msj : 'El entrandor no pudo ser registrado : ' + error
+                msj : 'El pokemon no pudo ser registrado : ' + error
             });
 
         }else{
             res.json({
                 success : true,
-                msj : 'El entrenador ha sido registrado' 
+                msj : 'El pokemon ha sido registrado' 
             });
         }
     });
